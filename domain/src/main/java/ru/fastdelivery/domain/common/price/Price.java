@@ -11,6 +11,7 @@ import java.math.BigDecimal;
 public record Price(
         BigDecimal amount,
         Currency currency) {
+
     public Price {
         if (isLessThanZero(amount)) {
             throw new IllegalArgumentException("Price Amount cannot be below Zero!");
