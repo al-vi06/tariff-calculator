@@ -1,6 +1,4 @@
-package ru.fastdelivery.usecase;
-
-import ru.fastdelivery.domain.common.geo.Point;
+package ru.fastdelivery.domain.common.geo;
 
 import java.math.BigDecimal;
 

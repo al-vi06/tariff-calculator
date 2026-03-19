@@ -1,6 +1,7 @@
 package ru.fastdelivery.usecase;
 
 import lombok.RequiredArgsConstructor;
+import ru.fastdelivery.domain.common.geo.GeoDistanceProvider;
 import ru.fastdelivery.domain.common.geo.GeoPropertiesProvider;
 import ru.fastdelivery.domain.common.geo.Point;
 import ru.fastdelivery.domain.common.price.Price;

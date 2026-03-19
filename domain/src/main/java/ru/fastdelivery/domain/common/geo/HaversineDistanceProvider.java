@@ -1,13 +1,12 @@
 package ru.fastdelivery.domain.common.geo;
 
 import java.math.BigDecimal;
-import java.math.MathContext;
 import java.math.RoundingMode;
 
 /**
  * Реализация расчета расстояния по формуле гаверсинусов
  */
-public class HaversineDistanceProvider implements ru.fastdelivery.usecase.GeoDistanceProvider {
+public class HaversineDistanceProvider implements GeoDistanceProvider {
     private static final double EARTH_RADIUS = 6371.0; // Радиус Земли в км
 
     @Override

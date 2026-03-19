@@ -6,7 +6,7 @@ import ru.fastdelivery.domain.common.currency.CurrencyFactory;
 import ru.fastdelivery.domain.common.currency.CurrencyPropertiesProvider;
 import ru.fastdelivery.domain.common.geo.GeoPropertiesProvider;
 import ru.fastdelivery.domain.common.geo.HaversineDistanceProvider;
-import ru.fastdelivery.usecase.GeoDistanceProvider;
+import ru.fastdelivery.domain.common.geo.GeoDistanceProvider;
 import ru.fastdelivery.usecase.TariffCalculateUseCase;
 import ru.fastdelivery.usecase.VolumePriceProvider;
 import ru.fastdelivery.usecase.WeightPriceProvider;
