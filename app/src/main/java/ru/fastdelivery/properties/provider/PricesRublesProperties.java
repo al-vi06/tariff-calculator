@@ -31,4 +31,8 @@ public class PricesRublesProperties implements WeightPriceProvider {
     public Price minimalPrice() {
         return new Price(minimal, currencyFactory.create("RUB"));
     }
+
+    public void setCurrencyFactory(CurrencyFactory currencyFactory) {
+        this.currencyFactory = currencyFactory;
+    }
 }

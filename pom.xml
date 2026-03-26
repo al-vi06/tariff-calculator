@@ -27,7 +27,7 @@
         <!--        versions 3rd party libraries-->
         <spring-boot.version>3.1.5</spring-boot.version>
         <junit-jupiter.version>5.9.3</junit-jupiter.version>
-        <lombok.version>1.18.28</lombok.version>
+        <lombok.version>1.18.36</lombok.version>
     </properties>
 
     <build>

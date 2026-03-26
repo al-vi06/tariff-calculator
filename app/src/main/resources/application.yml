@@ -5,3 +5,12 @@ cost:
   rub:
     perKg: 400
     minimal: 350
+  volume:
+    rub:
+      perCubicMeter: 3000   # стоимость 1 м³ в рублях (пример)
+
+geo:
+  minLatitude: 45
+  maxLatitude: 65
+  minLongitude: 30
+  maxLongitude: 96

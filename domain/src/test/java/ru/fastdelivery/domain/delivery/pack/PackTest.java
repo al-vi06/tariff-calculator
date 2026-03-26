@@ -1,6 +1,7 @@
 package ru.fastdelivery.domain.delivery.pack;
 
 import org.junit.jupiter.api.Test;
+import ru.fastdelivery.domain.common.length.Length;
 import ru.fastdelivery.domain.common.weight.Weight;
 
 import java.math.BigInteger;
@@ -22,4 +23,22 @@ class PackTest {
         var actual = new Pack(new Weight(BigInteger.valueOf(1_000)));
         assertThat(actual.weight()).isEqualTo(new Weight(BigInteger.valueOf(1_000)));
     }
+
+    @Test
+    void whenPackHasDimensions_thenHasDimensionsIsTrue() {
+        var dims = new OuterDimensions(
+                new Length(BigInteger.valueOf(100)),
+                new Length(BigInteger.valueOf(100)),
+                new Length(BigInteger.valueOf(100))
+        );
+        var pack = new Pack(new Weight(BigInteger.valueOf(1_000)), dims);
+        assertThat(pack.hasDimensions()).isTrue();
+    }
+
+    @Test
+    void whenPackNoDimensions_thenHasDimensionsIsFalse() {
+        var pack = new Pack(new Weight(BigInteger.valueOf(1_000)));
+        assertThat(pack.hasDimensions()).isFalse();
+    }
+
 }
