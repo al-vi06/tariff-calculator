@@ -114,3 +114,36 @@ http://localhost:8080/swagger-ui/index.html
 
 > [!NOTE]
 > Изменять зависимости между модулями не допускается
+
+## Пример вызова web-сервиса в Postman
+
+**Метод:** `POST`  
+**URL:** `http://localhost:8080/api/v1/calculate/`
+
+### Заголовки (Headers)
+| Ключ | Значение |
+|------|----------|
+| `Content-Type` | `application/json` |
+
+### Тело запроса (Body → raw → JSON)
+
+```json
+{
+  "packages": [
+    {
+      "weight": 4564,
+      "length": 345,
+      "width": 589,
+      "height": 234
+    }
+  ],
+  "currencyCode": "RUB",
+  "destination": {
+    "latitude": 45.398660,
+    "longitude": 55.027532
+  },
+  "departure": {
+    "latitude": 55.446008,
+    "longitude": 65.339151
+  }
+}

@@ -22,10 +22,10 @@ public class TariffCalculateUseCase {
     private final GeoPropertiesProvider geoPropertiesProvider;
 
     public Price calc(Shipment shipment) {
-        // 1. Базовая цена = max(по весу, по объёму)
+        //Базовая цена = max(по весу, по объёму)
         Price basePrice = calcByWeight(shipment).max(calcByVolume(shipment));
 
-        // 2. Если есть координаты — умножаем на расстояние
+        //Если есть координаты — умножаем на расстояние
         if (shipment.hasCoordinates()) {
             basePrice = applyDistance(basePrice, shipment.departure(), shipment.destination());
         }
